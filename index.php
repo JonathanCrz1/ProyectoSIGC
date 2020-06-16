@@ -4,7 +4,7 @@
 
   	require 'admin/db.php';
   	require 'views/index.view.php';
-  
+
 
   if (isset($_SESSION['user_id'])) {
     header('Location:home.php');
@@ -37,6 +37,6 @@
 <body>
 	<?php if(!empty($message)): ?>
   		<p> <?= $message ?></p>
-	<?php endif; ?>	
+	<?php endif; ?>
 </body>
 </html>

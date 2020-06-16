@@ -9,6 +9,7 @@
 <body>
 	<?php require 'header.php'; ?>
 
+
 	<div class="contenedor">
 		<main>
 		<article>
@@ -16,21 +17,34 @@
 			<div class="temp">
 				<h1>PLANEACION DEL CURSO E INSTRUMENTACION DIDACTICA G.C </h1>
 				<h3>COD. REF. ITCA-F-603 </h3>
-				<a href=""><i class="fas fa-upload"></i> Cargar archivo</a>
+
+				<form action="upload.php " method="POST" enctype="multipart/form-data">
+                   <h2>Cargar archivo</h2>
+                   <input type="file" name="archivo">
+                  <BUTTON class="fas fa-upload">Subir archivo</BUTTON>
+                </form>
 			</div>
 
 			<div class="temp">
 				<h1>EJ: PLANEACION DEL CURSO E INSTRUMENTACION DIDACTICA G.C </h1>
 				<h3>COD. REF. ITCA-F-603 </h3>
-				<a href=""><i class="fas fa-upload"></i> Cargar archivo</a>
+				<form action="upload.php" method="POST" enctype="multipart/form-data">
+                   <h2>Cargar archivo</h2>
+                   <input type="file" name="archivo">
+                  <BUTTON class="fas fa-upload">Subir archivo</BUTTON>
+                </form>
 			</div>
 
 			<div class="temp">
 				<h1>EJ: PLANEACION DEL CURSO E INSTRUMENTACION DIDACTICA G.C </h1>
 				<h3>COD. REF. ITCA-F-603 </h3>
-				<a href=""><i class="fas fa-upload"></i> Cargar archivo</a>
+				<form action="upload.php" method="POST" enctype="multipart/form-data">
+                   <h2>Cargar archivo</h2>
+                   <input type="file" name="archivo">
+                  <BUTTON class="fas fa-upload">Subir archivo</BUTTON>
+                </form>
 			</div>
-			
+
 		</article>
 	</main>
 	</div>
