@@ -29,7 +29,7 @@
 								<a href="report.php"><i class="fas fa-file"></i>Reportes</a>
 						<!-- Administracion -->
 							<a href="/" data-categoria="Administracion"  class="link_titulo">Administración</a>
-								<a href=""><i class="fas fa-user"></i>Cuenta</a>
+								<a href="account.php"><i class="fas fa-user"></i>Cuenta</a>
 								<a href=""><i class="fas fa-question-circle"></i>Ayuda</a>
 					</div>
 				</div>

@@ -290,3 +290,44 @@ input[type="submit"] {
 	font-size: 35px;
 
 }
+
+/*Formulario Cuenta*/
+.contenedor_cuenta{
+	margin: auto;
+	width: 90%;
+	max-width: 1200px;
+}
+div form{
+	background: #fff;
+	margin: 20px 0px;
+	padding: 20px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+form input[type="text"], form input[type="email"], form input[type="password"] {
+	border: 2px solid #007cc5;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	color: #141938;
+	outline-color: #536dfe;
+}
+input[type="submit"] {
+	color: #fff;
+	background-color: #0098cb;
+	border: 1px solid transparent;
+	font-size: 16px;
+	font-weight: 700;
+	height: 48px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.titulo_{
+	font-size: 3em;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
