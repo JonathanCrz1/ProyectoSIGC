@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'php_sigc_database';
+$database = 'ingresar1';
 
 
 	try {
