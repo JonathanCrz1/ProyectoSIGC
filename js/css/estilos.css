@@ -1,0 +1,333 @@
+/*Estilos globales*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #eaeded;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	margin: auto;
+	width: 90%;
+	max-width: 1200px;
+}
+
+main article {
+	background: #fff;
+	margin: 20px 0px;
+	padding: 20px;
+	height: 1000px;
+}
+
+/*Header.php estilos*/
+
+/* Enlaces de la barra de menú */
+
+.menu {
+	background: rgba(26, 87, 167, 1);
+	background: -webkit-linear-gradient( left, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	background: -o-linear-gradient( left, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	background: linear-gradient( to right, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a57a7', endColorstr='#20396c', GradientType=1);
+	padding: 5px 0;
+	margin-bottom: 20px;
+}
+
+.menu .contenedor-enlaces-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .btn-tools {
+	color: #fff;
+	padding: 7px;
+	border-radius: 3px;
+	display: flex;
+	align-items: flex-end;
+	border: 1px solid transparent;
+	font-size: 14px;
+	cursor: default;
+}
+
+.menu .btn-tools i {
+	margin-left: 20px;
+	position: relative;
+	bottom: 3px;
+}
+
+.menu .btn-tools:hover {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.menu .btn-tools span {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a {
+	color: #fff;
+	border: 1px solid transparent;
+	padding: 7px;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a:hover {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*Categorías y grid*/
+
+.contenedor-menu {
+	position: relative;
+}
+
+.grid {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 5px;
+	z-index: 1000;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: "categorias";
+}
+
+.grid.activo {
+	display: grid;
+}
+
+.grid::before {
+	content: "";
+	display: block;
+	background: transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	position: absolute;
+	top: -5px;
+	left: 60px;
+}
+
+.grid>div {
+	background: #fcfcfd;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid .titulo {
+	display: none;
+}
+
+.grid .categorias {
+	grid-area: categorias;
+	padding-top: 10px;
+	min-height: 300px;
+}
+
+.grid .categorias a {
+	color: #000;
+	font-size: 16px;
+	display: flex;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+.grid .categorias a i {
+	padding: 0 20px;
+}
+
+.grid .categorias a:hover {
+	color: #1b57a7;
+}
+
+.grid .categorias a:hover i {
+	display: inline-block;
+}
+
+.grid .categorias .link_titulo {
+	color: #1b57a7;
+	cursor: default;
+}
+
+/*Indez.php estilos*/
+
+/*Index estilos*/
+
+header {
+	background: rgba(26, 87, 167, 1);
+	background: -webkit-linear-gradient( left, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	background: -o-linear-gradient( left, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	background: linear-gradient( to right, rgba(26, 87, 167, 1) 0%, rgba(32, 57, 108, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a57a7', endColorstr='#20396c', GradientType=1);
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ccc;
+	padding: 20px 0;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+header a {
+	color: #fff;
+}
+.contenedor_index {
+	margin: auto;
+	width: 90%;
+	max-width: 500px;
+}
+div form {
+	background: #fff;
+	margin: 20px 0px;
+	padding: 20px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+form input[type="text"], form input[type="email"], form input[type="password"] {
+	border: 2px solid #007cc5;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	color: #141938;
+	outline-color: #536dfe;
+}
+input[type="submit"] {
+	color: #fff;
+	background-color: #0098cb;
+	border: 1px solid transparent;
+	font-size: 16px;
+	font-weight: 700;
+	height: 48px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.reg-div {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.reg-div a {
+	padding-left: 5px;
+	color: #536dfe;
+	font-weight: bold;
+	padding-bottom: 0px;
+}
+.reg-div a:hover {
+	text-decoration: underline;
+	color: #1b57a7;
+}
+.box{
+	
+}
+.box select{
+	border: 2px solid #007cc5;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	color: #141938;
+	outline-color: #536dfe;
+	outline: none;
+}
+.temp{
+	border: 1px solid #b5b5b5;
+	/*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);*/
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	color: #141938;
+	outline-color: #536dfe;
+}
+.temp a{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+}
+.temp a:hover{
+	color: #1b57a7;
+}
+
+.contenedor_itca img{
+	margin: auto;
+	width: 65%;
+	display: flex;
+	border: 3px solid #b5b5b5;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+	
+}
+.contenedor_itca p{
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+}
+.contenedor_itca h2{
+	text-align: center;
+	width: 100%;
+	font-size: 35px;
+
+}
+
+/*Formulario Cuenta*/
+.contenedor_cuenta{
+	margin: auto;
+	width: 90%;
+	max-width: 1200px;
+}
+div form{
+	background: #fff;
+	margin: 20px 0px;
+	padding: 20px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+form input[type="text"], form input[type="email"], form input[type="password"] {
+	border: 2px solid #007cc5;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	color: #141938;
+	outline-color: #536dfe;
+}
+input[type="submit"] {
+	color: #fff;
+	background-color: #0098cb;
+	border: 1px solid transparent;
+	font-size: 16px;
+	font-weight: 700;
+	height: 48px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.titulo_{
+	font-size: 3em;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
