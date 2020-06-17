@@ -1,8 +1,3 @@
-<?php 
-
-
-
- ?>
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -17,7 +12,7 @@
 		<main>
 		<article>
 			<div class="contenedor_cuenta">
-			<form class="datos" action="signup.php" method="post">
+			<form class="datos" action="account.php" method="post">
 			<h2 class="titulo_">Mi cuenta</h2>
 			<!-- <div class="box">
 			<select name="rol">
@@ -29,12 +24,12 @@
 			<input name="curp" type="text" placeholder="Ingrese su CURP">
 			<input name="rfc" type="text" placeholder="Ingrese su RFC">
      		<input name="perfil" type="text" placeholder="Ingrese su perfil profesional">
-     		<div class="box">
+     		<!-- <div class="box">
 			<select name="area_aca">
 				<option hidden selected>Area academica a la que pertenece</option>
 				<option value="">Sistemas y computación</option>
 			</select>
-     		</div>
+     		</div> -->
     		<input type="submit" value="Submit">
 			<!-- <div class="reg-div">
 				<label>¿Ya tienes una cuenta?</label> <a href="index.php">Iniciar sesión</a>
