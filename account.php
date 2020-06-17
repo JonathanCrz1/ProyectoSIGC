@@ -1,4 +1,5 @@
  <?php 
+require 'views/account.view.php';
 require 'admin/db.php';
 
 	$nombre = $_POST["nombre"];
